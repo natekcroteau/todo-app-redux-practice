@@ -9,12 +9,13 @@ export default function TodoList(){
 
     const showTodos = () => {
         return todos.map((todo) => {
-            <TodoCell name={todo.name} completed={todo.completed} />
+            <TodoCell date={todo.date} name={todo.name} completed={todo.completed} />
         })
     }
     return(
         <div className="todo-list">
             {showTodos()}
+            <TodoCell date={"06/19/2020"} name={"work on todo app"}  />
         </div>
     )
 }

@@ -1,3 +1,4 @@
+
 .App {
   height: 100%;
   width: 100%;
@@ -14,25 +15,34 @@
   align-items: center;
 }
 .todo-form{
-  height: 90%;
-  width: 45%;
+  height: 30%;
+  width: 30%;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  border: 1px solid rgba(0, 0, 255, 0.5);
+  justify-content: space-evenly;
+  background-color: rgba(80, 80, 128, 0.253);
+  border: 1px solid rgba(80, 80, 128, 0.5);
   border-radius: 8px;
+}
+.todo-form-input{
+  width: 200px;
+  align-self: center;
 }
 .todo-list{
   height: 90%;
-  width: 45%;
+  width: 65%;
   display: flex;
   flex-flow: row wrap;
   justify-content: space-evenly;
   align-items: center;
-  border: 1px solid rgba(0, 0, 255, 0.5);
+  background-color: rgba(80, 80, 128, 0.13);
+  border: 1px solid rgba(80, 80, 128, 0.753);
   border-radius: 8px;
 }
 .todo-cell{
-  
+  height: 220px;
+  width: 22%;
+  background-color: rgba(80, 80, 128, 0.253);
+  border: 1px solid rgba(80, 80, 128, 0.753);
+  border-radius: 8px;
 }
