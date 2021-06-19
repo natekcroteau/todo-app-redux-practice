@@ -5,7 +5,7 @@ import TodoList from './TodoList'
 export default function TodoContainer(){
 
     return(
-        <div>
+        <div className="todo-container">
             <TodoForm />
             <TodoList />
         </div>

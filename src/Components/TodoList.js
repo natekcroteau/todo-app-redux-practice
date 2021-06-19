@@ -13,7 +13,7 @@ export default function TodoList(){
         })
     }
     return(
-        <div>
+        <div className="todo-list">
             {showTodos()}
         </div>
     )
