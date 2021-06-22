@@ -7,18 +7,9 @@ export default function TodoCell(props){
 
     return(
         <div className="todo-cell">
-            <h1>{name}</h1>
+            <h1>Todo: {name}</h1>
             <h2>{date}</h2>
-            <h3>Completed</h3>
-            {/* <ToggleButton
-                value="check"
-                selected={selected}
-                onChange={() => {
-                    setSelected(!selected);
-                }}
-                >
-                <CheckIcon />
-            </ToggleButton> */}
+            <button>Done?</button>
         </div>
     )
 }
