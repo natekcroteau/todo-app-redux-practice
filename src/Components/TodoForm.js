@@ -1,12 +1,11 @@
 import { useState } from 'react'
-import { useDispatch, useSelector } from 'react-redux'
+import { useDispatch } from 'react-redux'
 
 
 
 export default function TodoForm(){
 
     const dispatch = useDispatch()
-    const todos = useSelector(state => state.todos)
     
     const [todoName, setTodoName] = useState('')
 
@@ -16,7 +15,14 @@ export default function TodoForm(){
 
     function submitTodo(event){
         event.preventDefault()
-        dispatch({type: "ADD_TODO", name: todoName})
+        fetch("http://localhost:3000/todos", {
+            method: "POST",
+            headers: {
+                "Content-type": "application/json"
+            },
+            body: JSON.stringify({"name": todoName})
+        })
+        .then(dispatch({type: "ADD_TODO", name: todoName}))
     }
 
     return(

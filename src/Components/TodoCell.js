@@ -6,7 +6,7 @@ export default function TodoCell(props){
 
     const dispatch = useDispatch()
 
-    const { date, name, completed, id } = props
+    const { date, name, id } = props
 
     function deleteTodo(){
 
