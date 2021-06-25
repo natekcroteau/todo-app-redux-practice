@@ -17,7 +17,7 @@ export default function TodoList(){
 
     const showTodos = () => {
         return todos.map((todo) => {
-            return <TodoCell date={todo.date} name={todo.name} completed={todo.completed} />
+            return <TodoCell id={todo.id} date={todo.date} name={todo.name} completed={todo.completed} />
         })
     }
 
