@@ -17,7 +17,8 @@ const todos = (state=[], action) => {
           : todo
       )
     case "SET_TODOS":
-      return state = action.todos
+      state = action.todos
+      return state
     case "DELETE_TODO":
       // return state.filter((todo) => {
       //   todo.name != action.name
