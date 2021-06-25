@@ -16,10 +16,12 @@ const todos = (state=[], action) => {
           ? { name: todo.name, completed: !todo.completed}
           : todo
       )
-    // case "DELETE_TODO":
-    //   return state.filter((todo) => {
-    //     todo.name != action.name
-    //   })
+    case "SET_TODOS":
+      return state = action.todos
+    case "DELETE_TODO":
+      // return state.filter((todo) => {
+      //   todo.name != action.name
+      // })
     default:
       return state
   }
@@ -34,5 +36,3 @@ ReactDOM.render(
   </Provider>,
   document.getElementById('root')
 );
-
-

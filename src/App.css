@@ -40,8 +40,8 @@
   border-radius: 8px;
 }
 .todo-cell{
-  height: 220px;
-  width: 22%;
+  height: 200px;
+  width: 160px;
   background-color: rgba(80, 80, 128, 0.253);
   border: 1px solid rgba(80, 80, 128, 0.753);
   border-radius: 8px;

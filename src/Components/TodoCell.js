@@ -7,8 +7,8 @@ export default function TodoCell(props){
 
     return(
         <div className="todo-cell">
-            <h1>Todo: {name}</h1>
-            <h2>{date}</h2>
+            <h2>Todo: {name}</h2>
+            <h3>{date}</h3>
             <button>Done?</button>
         </div>
     )
